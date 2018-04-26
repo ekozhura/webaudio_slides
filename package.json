@@ -1,0 +1,16 @@
+{
+  "name": "slides",
+  "version": "1.0.0",
+  "description": "",
+  "main": "reveal.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "nexusui": "^2.0.5"
+  },
+  "scripts": {
+    "start": "hs -p 9001"
+  }
+}

@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Web Audio In Action</title>
+
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="reveal.js/css/theme/blood.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <style>
+      html.title .slide-background, html.slides .slide-background { opacity: 0.1 !important; }
+      .fenriz {
+        display: flex;
+        flex-direction: columns;
+      }
+      .fenriz__desc {
+        text-align: left;
+      }
+      .fenriz__avatar-img {
+        width: 50%;
+        border-radius: 50%;
+
+      }
+    </style>
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section
+          data-markdown="slides/slide001.md"
+          data-background-image="images/modular.jpg"
+          data-state="title"></section>
+        <section>
+          <h3>Who am I</h3>
+          <div class="fenriz">
+            <div class="fenriz__desc">
+                <p>successful tech-lead</p>
+                <p>bedroom producer </p>
+                <p><a href="https://github.com/ekozhura">ekozhura at github</a></p>
+                <p><a href="http://kojuro.com">kojuro.com</a></p>
+                <p><a href="https://t.me/brutallosapiens">@brutallosapiens at t.me</a></p>
+              </div>
+              <div class="fenriz__avatar">
+                <img src="images/fenriz.jpeg" class="fenriz__avatar-img">
+              </div>
+          </div>
+
+        </section>
+        <section data-markdown="slides/slide002.md" data-state="slides" data-background-image="images/in-c.jpg"></section>
+        <section data-markdown="slides/slide003.md"></section>
+        <section data-markdown="slides/slide004.md"></section>
+        <section data-markdown="slides/slide005.md"></section>
+        <section data-markdown="slides/slide006.md"></section>
+        <section data-markdown>
+          If we consider Web Audio as a modular synthesizer,
+          programming becomes patching.
+        </section>
+        <section data-markdown="slides/slide007.md" data-state="slides" data-background-image="images/csirac.jpg"></section>
+        <section data-markdown="slides/slide008.md" data-state="slides" data-background-image="images/csirac.jpg"></section>
+        <section data-markdown="slides/slide009.md"></section>
+        <section data-markdown="slides/slide010.md"></section>
+        <section data-markdown="slides/slide011.md"></section>
+
+        <section data-markdown="slides/slide014.md"></section>
+        <section data-markdown="slides/slide015.md"></section>
+        <section data-markdown="slides/slide016.md"></section>
+
+        <section data-markdown="slides/slide017.md"></section>
+        <section data-markdown="slides/slide018.md"></section>
+        <section data-markdown="slides/slide019.md"></section>
+        <section data-markdown="slides/slide020.md"></section>
+        <section data-markdown="slides/slide021.md"></section>
+        <section data-markdown="slides/slide022.md"></section>
+        <section data-markdown="slides/slide023.md"></section>
+        <section data-markdown="slides/slide024.md"></section>
+        <section data-markdown="slides/slide025.md" data-state="slides" data-background-image="images/get-schwifty.gif"></section>
+        <section data-markdown>
+          ## Thank You!
+        </section>
+			</div>
+		</div>
+
+		<script src="reveal.js/lib/js/head.min.js"></script>
+		<script src="reveal.js/js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				history: true,
+				dependencies: [
+					{ src: 'reveal.js/plugin/markdown/marked.js' },
+					{ src: 'reveal.js/plugin/markdown/markdown.js' },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+
+	</body>
+</html>
