@@ -5,7 +5,7 @@ class EnvGenerator {
     this.attack = attack || 0.01; // sec
     this.decay = decay || 0.4; // sec
     this.sustain = sustain || 0.75; // level
-    this.release = release || 0.01;
+    this.release = release || 0.01; // sec
   }
 
   trigger(min = 0, max = 1) {

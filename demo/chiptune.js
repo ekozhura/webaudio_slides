@@ -12,13 +12,13 @@ function arp(param, interval) {
   }
 }
 
-let ivl = 0.025;
-// let ivl = 0.25;
+// let ivl = 0.025;
+let ivl = 0.25;
 let seq = arp(osc.frequency, ivl);
 
 let interval = new Nexus.Interval(ivl * 1000, function() {
-  //seq([freqs[0], freqs[3], freqs[2]]);
-  seq([freqs[0] * 2, freqs[3] * 2, freqs[2] * 2]);
+  seq([freqs[0], freqs[3], freqs[2]]);
+  // seq([freqs[0] * 2, freqs[3] * 2, freqs[2] * 2]);
 });
 
 let interval2 = new Nexus.Interval(500, function() {
